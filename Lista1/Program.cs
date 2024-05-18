@@ -1,3 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+using Lista1;
 
-Console.WriteLine("Hello, World!");
+Zadanie1.AverageOfFour();
+Zadanie1.AverageOfX(5);
