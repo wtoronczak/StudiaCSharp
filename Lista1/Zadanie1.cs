@@ -2,6 +2,8 @@ namespace Lista1;
 
 public static class Zadanie1
 {
+   // Zadanie 9 C# Basic Declarations and Expressions. Treść zadania :Write a C# Sharp program that takes four numbers as input to calculate and print the average.
+  
     public static void AverageOfFour()
     {
         Console.WriteLine("Enter First Number");
@@ -20,7 +22,8 @@ public static class Zadanie1
         Console.WriteLine($"Given numbers: {numberOne} | {numberTwo} | {numberThree} | {numberFour}");
         Console.WriteLine($"Average {average}" );
     }
-
+//Zadanie 1.1
+// liczy srednia z podanej ilosci liczb
     public static void AverageOfX(int x)
     {
         var sum = 0.0;
