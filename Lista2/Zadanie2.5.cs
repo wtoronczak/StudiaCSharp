@@ -9,7 +9,27 @@ public class Zadanie2_5
     // Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. It can be practical if the input is usually in sort order but may occasionally have some out-of-order elements nearly in position."
     public static void BubbleSort()
     {
-        
+        var sortList = new List<int> { 12,5, 4, 6, 7, 8, 1, 2,0 };
+        var backUp = 0;
+       
+        for (int i= 0;i<sortList.Count - 1; ++i)
+        {
+            for (int j = 0; j < sortList.Count - 1; j++)
+            {
+                if (sortList[j] > sortList[j + 1])
+                {
+                    backUp = sortList[j + 1];
+                    sortList[j + 1] = sortList[j];
+                    sortList[j] = backUp;
+                }
+            }
+            
+        }
+
+        foreach (var number in sortList)
+        {
+            Console.WriteLine(number);
+        }
     }
 
 

@@ -15,9 +15,15 @@ public class Zadanie2_6
 
 
 
-//Zadanie 9; C Sharp DateTime; Treść: Write a C# Sharp program to calculate what day of the week is 40 days from now.
-    
-
-
+    //Zadanie 9; C Sharp DateTime; Treść: Write a C# Sharp program to calculate what day of the week is 40 days from now.
+    public static void DayOfWeek()
+    {
+        DateTime todayIs = DateTime.Now;
+        var dayName = todayIs.DayOfWeek;
+        Console.WriteLine($"{dayName}");
+        var dayIn40 = todayIs.AddDays(40);
+        var dayIn40Name = dayIn40.DayOfWeek;
+        Console.WriteLine($"{dayIn40Name}");
+    }
 
 }
